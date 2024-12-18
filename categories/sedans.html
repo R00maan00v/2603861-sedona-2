@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Седаны</title>
+</head>
+<body>
+    <div id="header-container">
+        <h1>
+            <a href="../index.html" class="logo-link"> 
+                <img src="../favicon.ico" alt="Иконка" class="icon"> 
+                Car for sale
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="../catalog.html">Каталог</a>
+                    <div class="dropdown-content">
+                        <a href="coupes.html">Купе</a>
+                        <a href="offroad.html">Внедорожники</a>
+                        <a href="sedans.html">Седаны</a>
+                        <a href="sportcars.html">Спорткары</a>
+                    </div>
+                </li>
+                <li><a href="../cart.html">Корзина</a></li>
+                <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="category-title">Категория: Седаны
+        <button class="sort-button" onclick="sortCars('asc')">↑</button>
+        <button class="sort-button" onclick="sortCars('desc')">↓</button>
+    </h1>
+    
+    <div id="car-list">
+        <div class="car" data-price="900000">
+            <img src="../images/sedans/albany_primo_main.jpg" alt="Albany Primo">
+            <div class="car-info">
+                <h2>Albany Primo</h2>
+                <p>Цена: <span>900.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Albany Primo" data-product-price="900000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="2800000">
+            <img src="../images/sedans/benefactor_schafter_main.jpg" alt="Benefactor Schafter">
+            <div class="car-info">
+                <h2>Benefactor Schafter</h2>
+                <p>Цена: <span>2.800.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Benefactor Schafter" data-product-price="2800000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="2400000">
+            <img src="../images/sedans/cheval_fugitive_main.jpg" alt="Cheval Fugitive">
+            <div class="car-info">
+                <h2>Cheval Fugitive</h2>
+                <p>Цена: <span>2.400.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Cheval Fugitive" data-product-price="2400000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="1000000">
+            <img src="../images/sedans/declasse_premie_main.jpg" alt="DeClasse Premie">
+            <div class="car-info">
+                <h2>DeClasse Premie</h2>
+                <p>Цена: <span>1.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="DeClasse Premie" data-product-price="1000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="5500000">
+            <img src="../images/sedans/obey_tailgater_main.jpg" alt="Obey Tailgater">
+            <div class="car-info">
+                <h2>Obey Tailgater</h2>
+                <p>Цена: <span>5.500.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Obey Tailgater" data-product-price="5500000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="2600000">
+            <img src="../images/sedans/karin_asterope_main.jpg" alt="Karin Asterope">
+            <div class="car-info">
+                <h2>Karin Asterope</h2>
+                <p>Цена: <span>2.600.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Karin Asterope" data-product-price="2600000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/sortCars.js" defer></script>
+    <script src="../js/carsHover.js" defer></script>
+    <script src="../js/addToCart.js" defer></script>
+</body>
+</html>

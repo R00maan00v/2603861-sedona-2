@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Внедорожники</title>
+</head>
+<body>
+    <div id="header-container">
+        <h1>
+            <a href="../index.html" class="logo-link"> 
+                <img src="../favicon.ico" alt="Иконка" class="icon"> 
+                Car for sale
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="../catalog.html">Каталог</a>
+                    <div class="dropdown-content">
+                        <a href="coupes.html">Купе</a>
+                        <a href="offroad.html">Внедорожники</a>
+                        <a href="sedans.html">Седаны</a>
+                        <a href="sportcars.html">Спорткары</a>
+                    </div>
+                </li>
+                <li><a href="../cart.html">Корзина</a></li>
+                <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="category-title">Категория: Внедорожники
+        <button class="sort-button" onclick="sortCars('asc')">↑</button>
+        <button class="sort-button" onclick="sortCars('desc')">↓</button>
+    </h1>
+    
+    <div id="car-list">
+        <div class="car" data-price="3500000">
+            <img src="../images/offroad/vapid_sadler_main.jpg" alt="Vapid Sadler">
+            <div class="car-info">
+                <h2>Vapid Sadler</h2>
+                <p>Цена: <span>3.500.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Vapid Sadler" data-product-price="3500000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="3800000">
+            <img src="../images/offroad/vapid_sandking_main.jpg" alt="Vapid Sandking">
+            <div class="car-info">
+                <h2>Vapid Sandking</h2>
+                <p>Цена: <span>3.800.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Vapid Sandking" data-product-price="3800000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="24900000">
+            <img src="../images/offroad/benefactor_dubsta_6x6_main.jpg" alt="Benefactor Dubsta 6x6">
+            <div class="car-info">
+                <h2>Benefactor Dubsta 6x6</h2>
+                <p>Цена: <span>24.900.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Benefactor Dubsta 6x6" data-product-price="24900000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="37500000">
+            <img src="../images/offroad/vapid_guardian_main.jpg" alt="Vapid Guardian">
+            <div class="car-info">
+                <h2>Vapid Guardian</h2>
+                <p>Цена: <span>37.500.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Vapid Guardian" data-product-price="37500000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="50000000">
+            <img src="../images/offroad/cheval_marshall_main.jpg" alt="Cheval Marshall">
+            <div class="car-info">
+                <h2>Cheval Marshall</h2>
+                <p>Цена: <span>50.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Cheval Marshall" data-product-price="50000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car" data-price="25000000">
+            <img src="../images/offroad/vapid_contender_main.jpg" alt="Vapid Contender">
+            <div class="car-info">
+                <h2>Vapid Contender</h2>
+                <p>Цена: <span>25.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Vapid Contender" data-product-price="25000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/sortCars.js" defer></script>
+    <script src="../js/carsHover.js" defer></script>
+    <script src="../js/addToCart.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Купе</title>
+</head>
+<body>
+    <div id="header-container">
+        <h1>
+            <a href="../index.html" class="logo-link"> 
+                <img src="../favicon.ico" alt="Иконка" class="icon"> 
+                Car for sale
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="../catalog.html">Каталог</a>
+                    <div class="dropdown-content">
+                        <a href="coupes.html">Купе</a>
+                        <a href="offroad.html">Внедорожники</a>
+                        <a href="sedans.html">Седаны</a>
+                        <a href="sportcars.html">Спорткары</a>
+                    </div>
+                </li>
+                <li><a href="../cart.html">Корзина</a></li>
+                <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<h1 class="category-title">Категория: Купе
+    <button class="sort-button" onclick="sortCars('asc')">↑</button>
+    <button class="sort-button" onclick="sortCars('desc')">↓</button>
+</h1>
+    
+    <div id="car-list">
+        <div class="car">
+            <img src="../images/coupes/ocelot_f620_main.jpg" alt="Ocelot F620">
+            <div class="car-info">
+                <h2>Ocelot F620</h2>
+                <p>Цена: <span>8.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Ocelot F620" data-product-price="8000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car">
+            <img src="../images/coupes/ubermacht_oracle_main.jpg" alt="Übermacht Oracle">
+            <div class="car-info">
+                <h2>Übermacht Oracle</h2>
+                <p>Цена: <span>8.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Übermacht Oracle" data-product-price="8000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car">
+            <img src="../images/coupes/enus_windsor_drop_main.jpg" alt="Enus Windsor Drop">
+            <div class="car-info">
+                <h2>Enus Windsor Drop</h2>
+                <p>Цена: <span>90.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Enus Windsor Drop" data-product-price="90000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car">
+            <img src="../images/coupes/lampadati_felon_main.jpg" alt="Lampadati Felon">
+            <div class="car-info">
+                <h2>Lampadati Felon</h2>
+                <p>Цена: <span>9.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Lampadati Felon" data-product-price="9000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car">
+            <img src="../images/coupes/ocelot_jackal_main.jpg" alt="Ocelot Jackal">
+            <div class="car-info">
+                <h2>Ocelot Jackal</h2>
+                <p>Цена: <span>6.000.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Ocelot Jackal" data-product-price="6000000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="car">
+            <img src="../images/coupes/ubermacht_sentinel_main.jpg" alt="Übermacht Sentinel">
+            <div class="car-info">
+                <h2>Übermacht Sentinel</h2>
+                <p>Цена: <span>9.500.000 рублей</span></p>
+                <button class="styled-button" data-product-name="Übermacht Sentinel" data-product-price="9500000" onclick="addToCart(this.dataset.productName, this.dataset.productPrice)">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/sortCars.js" defer></script>
+    <script src="../js/carsHover.js" defer></script>
+    <script src="../js/addToCart.js" defer></script>
+</body>
+</html>
+0

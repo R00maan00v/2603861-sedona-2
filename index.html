@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>О нас</title>
+</head>
+<body>
+<div id="header-container">
+    <h1>
+        <a href="index.html" class="logo-link">
+            <img src="favicon.ico" alt="Иконка" class="icon">
+            Car for sale
+        </a>
+    </h1>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="catalog.html">Каталог</a>
+                <div class="dropdown-content">
+                    <a href="categories/coupes.html">Купе</a>
+                    <a href="categories/offroad.html">Внедорожники</a>
+                    <a href="categories/sedans.html">Седаны</a>
+                    <a href="categories/sportcars.html">Спорткары</a>
+                </div>
+            </li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<main>
+    <section id="about-us">
+        <h2>О нас</h2>
+        <p>Добро пожаловать в наш магазин, где вы можете приобрести автомобили, вдохновленные популярной игрой! Мы предлагаем широкий ассортимент автомобилей, которые идеально подходят для различных задач — от спортивных до внедорожников.</p>
+    </section>
 
-  </body>
+    <section id="photo-gallery" class="photo-gallery">
+        <h3>Наши автомобили</h3>
+        <img src="images/photo1.jpg" alt="Автомобиль 1">
+        <img src="images/photo2.jpg" alt="Автомобиль 2">
+        <img src="images/photo3.jpg" alt="Автомобиль 3">
+        <img src="images/photo4.jpg" alt="Автомобиль 4">
+        <img src="images/photo5.jpg" alt="Автомобиль 5">
+    </section>
+
+    <section id="customer-testimonials">
+        <h3>Отзывы клиентов</h3>
+        <p>Наши клиенты всегда остаются довольны! Вот что они говорят:</p>
+        <blockquote>
+            <p>“Я купил свой первый автомобиль здесь, и это был отличный опыт! Персонал был очень дружелюбным и помог мне выбрать идеальную модель.” - Алексей</p>
+        </blockquote>
+        <blockquote>
+            <p>“Отличное качество автомобилей и доступные цены. Я рекомендую этот магазин всем своим друзьям!” - Мария</p>
+        </blockquote>
+    </section>
+
+    <section id="special-offers">
+        <h3>Специальные предложения</h3>
+        <p>Не пропустите наши специальные предложения! В этом месяце мы предлагаем скидки до 20% на определенные модели. Успейте воспользоваться выгодными условиями и получите свой идеальный автомобиль по отличной цене!</p>
+    </section>
+
+    <section id="faq">
+        <h3>Часто задаваемые вопросы</h3>
+        <p>У вас есть вопросы? Мы собрали ответы на самые распространенные из них:</p>
+        <ul>
+            <li><strong>Какой процесс покупки автомобиля?</strong> - Выберите автомобиль, заполните форму и наш менеджер свяжется с вами.</li>
+            <li><strong>Есть ли возможность тест-драйва?</strong> - Да, мы предлагаем тест-драйвы на все наши модели.</li>
+            <li><strong>Каковы условия гарантии?</strong> - Все автомобили имеют гарантию на 2 года или 50,000 км пробега.</li>
+        </ul>
+    </section>
+
+    <section id="email-form" class="email-form">
+        <h3>Подбор автомобиля</h3>
+        <p>Если вы хотите получить консультацию или подобрать автомобиль под ваши нужды, оставьте ваш email:</p>
+        <form action="submit_email.php" method="post">
+            <input type="email" name="email" placeholder="Введите ваш email" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <section id="contact-info">
+        <h3>Контактная информация</h3>
+        <p>Телефон для связи: <strong>+7 (987) 654-32-10</strong></p>
+        <p>Если у вас есть вопросы, не стесняйтесь обращаться к нам!</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Car for sale by Romanovv</p>
+</footer>
+
+<script src="./js/cart.js" defer></script>
+</body>
 </html>

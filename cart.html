@@ -1,0 +1,59 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Корзина</title>
+</head>
+<body>
+<div id="header-container">
+    <h1>
+        <a href="index.html" class="logo-link">
+            <img src="favicon.ico" alt="Иконка" class="icon">
+            Car for sale
+        </a>
+    </h1>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="catalog.html">Каталог</a>
+                <div class="dropdown-content">
+                    <a href="categories/coupes.html">Купе</a>
+                    <a href="categories/offroad.html">Внедорожники</a>
+                    <a href="categories/sedans.html">Седаны</a>
+                    <a href="categories/sportcars.html">Спорткары</a>
+                </div>
+            </li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <div id="cart">
+        <h2>Корзина</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Модель</th>
+                    <th>Количество</th>
+                    <th>Цена за единицу</th>
+                    <th>Сумма</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Здесь добавляются машины -->
+            </tbody>
+        </table>
+        <h3 id="total-price">Общая сумма: 0 рублей</h3>
+        <button class="order-button" onclick="clearCart()">Очистить корзину</button>
+        <button class="order-button" onclick="placeOrder()">Оформить заказ</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Car for sale by Romanovv</p>
+    </footer>
+
+    <script src="./js/cart.js" defer></script>
+</body>
+</html>

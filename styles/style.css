@@ -1,0 +1,399 @@
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans-400.woff2') format('woff2'),
+         url('../fonts/ptsans-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans-700.woff2') format('woff2'),
+         url('../fonts/ptsans-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: linear-gradient(to bottom, #f5deb3, #ffe4b5);
+    color: #4b3621; 
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #8b4513; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+
+h1 {
+    font-size: 3em; 
+    text-align: center; 
+}
+
+h2 {
+    font-size: 2.5em; 
+    text-align: center; 
+}
+
+h3 {
+    font-size: 2em; 
+    text-align: center; 
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #d2b48c; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 10px; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    margin: 0; 
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4b3621; 
+    transition: color 0.3s; 
+    font-size: 1.5em; 
+}
+
+nav ul li a:hover {
+    color: #8b4513; 
+}
+
+
+.car-for-sale {
+    display: flex; 
+    align-items: center; 
+    color: #4b3621; 
+    text-decoration: none;
+}
+
+.icon {
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain; 
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #fff; 
+    min-width: 160px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    border-radius: 5px; 
+    padding: 10px 0; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #4b3621;
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    transition: background-color 0.3s; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; 
+    border-radius: 5px; 
+}
+
+.contact-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff8dc; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    background-color: #d2b48c;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+p {
+    font-size: 1.5em; 
+}
+
+img {
+    width: 400px; 
+    height: 320px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+
+.email-form {
+    border-radius: 5px;
+    padding: 20px; 
+    text-align: center; 
+}
+
+.email-form input[type="email"] {
+    width: 80%; 
+    padding: 10px; 
+    border: 2px solid #8b4513; 
+    border-radius: 5px; 
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+    transition: border-color 0.3s; 
+}
+
+
+.email-form input[type="email"]:focus {
+    border-color: #d2b48c; 
+    outline: none; 
+}
+
+
+.email-form button {
+    background-color: #8b4513;
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    font-size: 1.2em; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+
+.email-form button:hover {
+    background-color: #d2b48c; 
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    align-items: center; 
+}
+
+.logo-link img {
+    margin-right: 8px; 
+}
+
+#header-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+}
+
+nav {
+    margin-top: 10px; 
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; 
+    text-align: center; 
+    padding: 10px; 
+    background-color: #f1f1f1; 
+}
+
+
+.categories {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.category {
+    margin: 10px; 
+}
+
+.category-image {
+    width: 200px; 
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+}
+
+.category-image:hover {
+    transform: scale(1.05); 
+}
+
+.sort-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#car-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.car {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.car img {
+    width: 150px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+.car-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-info p {
+    margin: 5px 0;
+}
+
+.car-info button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.sort-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.category-title {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 3em;
+    color: #8b4513; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    margin: 20px 0; 
+}
+
+#car-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.car {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.car img {
+    width: 300px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+.car-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-info p {
+    margin: 5px 0;
+}
+
+.styled-button {
+    background-color: #FF5733;
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.styled-button:hover {
+    background-color: #C70039; 
+}
+
+.sort-button {
+    background-color: #FF5733; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+.sort-button:hover {
+    background-color: #C70039; 
+}
+
+
+.cart-button {
+    background-color: #FF5733;
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 1.2em; 
+    transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #C70039; 
+}
+
+
+.order-button {
+    background-color: #FF5733; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 1.5em; 
+    margin: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.order-button:hover {
+    background-color: #C70039;
+}
+
+button:active { 
+    background-color: red; 
+    transform: translateY(2px);
+}
